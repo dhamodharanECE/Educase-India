@@ -1,70 +1,156 @@
-# Getting Started with Create React App
+# Company         : Educase India - Assignment
+# Tech Stack      : Frontend Project 
+# Technologies    : React Js, HTML5, CSS
+# Building Blocks : Home Pade, Register Page, Login Page, User Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Features:
 
-## Available Scripts
+✅ User Registration with input validation
 
-In the project directory, you can run:
+✅ Login Authentication using localStorage
 
-### `npm start`
+✅ Dashboard Display with dynamic user data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ Email and Phone Validation using Regular Expressions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✅ Persistent Data Storage via localStorage
 
-### `npm test`
+✅ Responsive Design using CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✅ Font Awesome Camera Icon for profile avatar
 
-### `npm run build`
+🛠️ Tech Stack:
+Technology	        => Description
+React.js	        => Frontend framework for UI
+JavaScript (ES6+)	=> Application logic and validation
+CSS3	            => Styling and layout
+Font Awesome	    => Icons for profile section
+LocalStorage API	=> To store and retrieve user data
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📂 Folder Structure:
+PopX-Account-App/
+│
+├── src/
+│   ├── components/
+│   │   ├── Register.js
+│   │   ├── Login.js
+│   │   └── Dashboard.js
+│   │
+│   ├── assets/
+│   │   └── downloads.png
+│   │
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── styles/
+│       ├── Register.css
+│       ├── Login.css
+│       └── Dashboard.css
+│
+├── public/
+│   └── index.html
+│
+├── package.json
+└── README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🧩 Component Overview:
+🟣 Register.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Captures user details: Full Name, Email, Phone, Password, Company Name.
 
-### `npm run eject`
+Validates email and phone number before submission.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Stores the form data in localStorage.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+On success, navigates to the Login page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🟣 Login.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Takes Email and Password as input.
 
-## Learn More
+Validates credentials against stored data in localStorage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If credentials match → Redirects to Dashboard.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🟣 Dashboard.js
 
-### Code Splitting
+Fetches and displays registered user’s Name and Email.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Displays a profile image (with a camera icon for future photo uploads).
 
-### Analyzing the Bundle Size
+Shows a short account description.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🧠 Logic Flow:
 
-### Making a Progressive Web App
+📝 Register → Save data in localStorage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🔐 Login → Check credentials from localStorage
 
-### Advanced Configuration
+🧑‍💼 Dashboard → Display saved user data dynamically
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+⚙️ Setup Instructions:
+1️⃣ Clone the repository
+git clone https://github.com/yourusername/PopX-Account-App.git
+cd PopX-Account-App
 
-### Deployment
+2️⃣ Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3️⃣ Run the app
+npm start
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+App will start on 👉 http://localhost:3000
+
+💾 LocalStorage Example:
+
+Here’s how user data is stored in the browser’s localStorage:
+
+{
+  "username": "Dhamodharan S",
+  "phonenumber": "9876543210",
+  "email": "dhamo@gmail.com",
+  "password": "12345",
+  "companyname": "PopX"
+}
+
+🎨 Font Awesome Setup:
+
+Add this line inside your public/index.html <head> tag for camera icons to work:
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+📸 Example Preview:
+Register Page
+
+Users can create an account by filling in the required details.
+
+Login Page:
+
+Validates credentials before granting access.
+
+Dashboard:
+
+Displays user profile with name, email, and avatar.
+
+🔒 Validation Rules:
+Field	Validation
+Email	Must follow standard email format
+Phone Number	Must be exactly 10 digits
+Password	Required field
+Name	Required field
+🧑 Author
+
+👤 Dhamodharan S
+Full Stack Web Developer Intern
+📧 [your-email@example.com
+]
+💼 [LinkedIn Profile or GitHub Link]
+
+📜 License:
+
+This project is licensed under the MIT License.
+You are free to use and modify it for educational or personal projects.
