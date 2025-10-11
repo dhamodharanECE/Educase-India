@@ -146,9 +146,9 @@ Name	Required field
 
 👤 Dhamodharan S
 Full Stack Web Developer Intern
-📧 [your-email@example.com
+📧 dhamodharansece23@gmail.com
 ]
-💼 [LinkedIn Profile or GitHub Link]
+💼 https://github.com/dhamodharanECE
 
 📜 License:
 
