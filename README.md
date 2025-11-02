@@ -1,7 +1,7 @@
 # **Company         : Educase India - Assignment**
-# Tech Stack      : Frontend Project 
-# Technologies    : React Js, HTML5, CSS
-# Building Blocks : Home Pade, Register Page, Login Page, User Page
+Tech Stack      : Frontend Project 
+Technologies    : React Js, HTML5, CSS
+Building Blocks : Home Pade, Register Page, Login Page, User Page
 
 🚀 Features:
 
