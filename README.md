@@ -27,32 +27,6 @@ CSS3	            => Styling and layout
 Font Awesome	    => Icons for profile section
 LocalStorage API	=> To store and retrieve user data
 
-📂 Folder Structure:
-PopX-Account-App/
-│
-├── src/
-│   ├── components/
-│   │   ├── Register.js
-│   │   ├── Login.js
-│   │   └── Dashboard.js
-│   │
-│   ├── assets/
-│   │   └── downloads.png
-│   │
-│   ├── App.js
-│   ├── App.css
-│   ├── index.js
-│   └── styles/
-│       ├── Register.css
-│       ├── Login.css
-│       └── Dashboard.css
-│
-├── public/
-│   └── index.html
-│
-├── package.json
-└── README.md
-
 🧩 Component Overview:
 🟣 Register.js
 
@@ -124,15 +98,27 @@ Add this line inside your public/index.html <head> tag for camera icons to work:
 />
 
 📸 Example Preview:
-Register Page
+Main Page:
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/8c37c549-2044-4b00-82f2-303f3b34d1a8" />
+
+Overwiew Page.
+
+Register Page:
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/53682b24-b559-4578-8ae9-d06ee1b69ca0" />
 
 Users can create an account by filling in the required details.
 
 Login Page:
 
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/00c42e84-edc6-441c-b386-f16e5100bcff" />
+
 Validates credentials before granting access.
 
 Dashboard:
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c5b1e3d4-4c4a-4848-9a3c-a1230d00330b" />
 
 Displays user profile with name, email, and avatar.
 
